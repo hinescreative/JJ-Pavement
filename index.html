@@ -17,6 +17,7 @@
             brand: {
               dark:   '#0f172a',
               darker: '#080f1e',
+              blue:   '#1a3c7a',
               amber:  '#f59e0b',
               'amber-dark': '#d97706',
               'amber-light': '#fbbf24',
@@ -252,71 +253,124 @@
 
 
   <!-- ═══════════════════════════════════════════════
+       REVIEWS
+  ═══════════════════════════════════════════════ -->
+  <section id="reviews" class="py-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Header + platform links -->
+      <div class="mb-8 text-center">
+        <h2 class="text-4xl lg:text-5xl font-900 text-brand-blue mb-5">What Customers Say</h2>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <!-- Google -->
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-900 select-none leading-none"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></span>
+            <span class="text-brand-amber font-900">5.0★</span>
+            <a href="https://maps.app.goo.gl/QhYBVJLCVPbdxj2m8" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-1 bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-xs px-4 py-1.5 rounded-full transition-colors">
+              Read all Google reviews →
+            </a>
+          </div>
+          <span class="text-slate-300 hidden sm:block">|</span>
+          <!-- Yelp -->
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-900 text-[#d32323] leading-none">Yelp</span>
+            <span class="text-brand-amber font-900">5.0★</span>
+            <a href="https://www.yelp.com/biz/j-and-j-pavement-repairs-arlington-heights-3" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-1 bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-xs px-4 py-1.5 rounded-full transition-colors">
+              Read all Yelp reviews →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single combined marquee — Google & Yelp interleaved -->
+      <div class="marquee-outer">
+        <div class="marquee-track gap-5" style="animation-duration: 55s;">
+          <!-- Original set: alternating Google / Yelp -->
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"John was particularly outstanding — he worked closely with our landscaper to ensure the new driveway flowed seamlessly with the surrounding layout. The whole experience was smooth and stress-free."</p><div class="text-xs font-700 text-brand-dark">Mo M.</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Working with J&amp;J has been one of the best contractor experiences I've had to date. John was very responsive, knowledgeable, and trustworthy throughout. His crew communicated well and had great attention to detail."</p><div class="text-xs font-700 text-brand-dark">Eric M.</div><div class="text-xs text-brand-slate">Arlington Heights, IL</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"They suggested and made improvements that left my property safer, without charging more. The work still looks like new and the excellent quality has been complimented by other contractors."</p><div class="text-xs font-700 text-brand-dark">Gina V.</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Top notch in all respects! If you're deciding between multiple contractors, hire these guys."</p><div class="text-xs font-700 text-brand-dark">Dave D.</div><div class="text-xs text-brand-slate">Barrington, IL</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Professional, honest, and high quality work. John gave us a fair quote, showed up on time, and the driveway looks fantastic. Would absolutely hire again."</p><div class="text-xs font-700 text-brand-dark">Brian K.</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"John and his team are experts in the asphalt and concrete industry. The quality of their work is exceptional — the crew showed up when expected and got the work done as planned."</p><div class="text-xs font-700 text-brand-dark">Mary D.</div><div class="text-xs text-brand-slate">Arlington Heights, IL</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Great experience start to finish. The crew was clean, efficient, and respectful of our property. The new asphalt looks perfect and the price was very competitive."</p><div class="text-xs font-700 text-brand-dark">Lisa T.</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"In a very competitive business, it is good to know someone who will tell you the truth and follow up on what he says. John is extremely ethical and makes sure his work is done right."</p><div class="text-xs font-700 text-brand-dark">Tom G.</div><div class="text-xs text-brand-slate">Palatine, IL</div></div>
+          <!-- Duplicate set for seamless loop -->
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"John was particularly outstanding — he worked closely with our landscaper to ensure the new driveway flowed seamlessly with the surrounding layout. The whole experience was smooth and stress-free."</p><div class="text-xs font-700 text-brand-dark">Mo M.</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Working with J&amp;J has been one of the best contractor experiences I've had to date. John was very responsive, knowledgeable, and trustworthy throughout. His crew communicated well and had great attention to detail."</p><div class="text-xs font-700 text-brand-dark">Eric M.</div><div class="text-xs text-brand-slate">Arlington Heights, IL</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"They suggested and made improvements that left my property safer, without charging more. The work still looks like new and the excellent quality has been complimented by other contractors."</p><div class="text-xs font-700 text-brand-dark">Gina V.</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Top notch in all respects! If you're deciding between multiple contractors, hire these guys."</p><div class="text-xs font-700 text-brand-dark">Dave D.</div><div class="text-xs text-brand-slate">Barrington, IL</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Professional, honest, and high quality work. John gave us a fair quote, showed up on time, and the driveway looks fantastic. Would absolutely hire again."</p><div class="text-xs font-700 text-brand-dark">Brian K.</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"John and his team are experts in the asphalt and concrete industry. The quality of their work is exceptional — the crew showed up when expected and got the work done as planned."</p><div class="text-xs font-700 text-brand-dark">Mary D.</div><div class="text-xs text-brand-slate">Arlington Heights, IL</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Great experience start to finish. The crew was clean, efficient, and respectful of our property. The new asphalt looks perfect and the price was very competitive."</p><div class="text-xs font-700 text-brand-dark">Lisa T.</div></div>
+          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"In a very competitive business, it is good to know someone who will tell you the truth and follow up on what he says. John is extremely ethical and makes sure his work is done right."</p><div class="text-xs font-700 text-brand-dark">Tom G.</div><div class="text-xs text-brand-slate">Palatine, IL</div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
        SERVICES
   ═══════════════════════════════════════════════ -->
   <section id="services" class="py-12 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="mb-7 text-center">
-        <h2 class="text-3xl lg:text-4xl font-900 text-brand-dark mb-4">What We Do</h2>
-        <p class="text-brand-dark text-lg leading-relaxed max-w-2xl mx-auto">Whether you need a quick repair, a full installation, or expert advice, J&amp;J Pavement Repairs Inc. is here to help. Our certified team are ready to provide fast, reliable, and professional services.</p>
+        <h2 class="text-3xl lg:text-4xl font-900 text-brand-blue mb-4">What We Do</h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Residential Asphalt -->
-        <div class="service-card bg-white rounded-xl p-4 border border-slate-100 shadow-sm text-center">
-          <div class="w-10 h-10 bg-brand-amber/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+        <a href="/services/asphalt.html" class="service-card bg-white rounded-xl p-8 border border-slate-100 shadow-sm text-center flex flex-col items-center gap-3 hover:border-brand-amber transition-colors">
+          <div class="w-12 h-12 bg-brand-amber/10 rounded-lg flex items-center justify-center">
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
           </div>
-          <h3 class="text-base font-900 text-brand-dark mb-2 text-center">Residential Asphalt</h3>
-          <p class="text-brand-slate text-sm leading-relaxed">First, the area is cleared of grass, debris, and old materials. The site is graded to promote proper water drainage. A compacted gravel base is laid to provide a solid foundation. Hot asphalt is poured, spread evenly, and carefully graded for a smooth surface. Rollers compact the asphalt to ensure strength and stability. Edges are shaped neatly and the surface is inspected. After a short curing period, the new driveway is ready for everyday residential use.</p>
-        </div>
+          <h3 class="text-lg font-900 text-brand-blue">Residential Asphalt</h3>
+        </a>
 
         <!-- Commercial Asphalt -->
-        <div class="service-card bg-white rounded-xl p-4 border border-slate-100 shadow-sm text-center">
-          <div class="w-10 h-10 bg-brand-amber/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+        <a href="/services/asphalt.html" class="service-card bg-white rounded-xl p-8 border border-slate-100 shadow-sm text-center flex flex-col items-center gap-3 hover:border-brand-amber transition-colors">
+          <div class="w-12 h-12 bg-brand-amber/10 rounded-lg flex items-center justify-center">
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
           </div>
-          <h3 class="text-base font-900 text-brand-dark mb-2 text-center">Commercial Asphalt</h3>
-          <p class="text-brand-slate text-sm leading-relaxed">The project begins with site clearing, grading, and preparation to ensure proper drainage and support heavier traffic loads. A thick, compacted aggregate base is installed for strength. Hot-mix asphalt is poured and evenly spread across the surface. Industrial rollers compact the asphalt for maximum durability. Edges are trimmed and transitions to existing surfaces are smoothed. After thorough compaction and inspection, the asphalt cures. Line striping or other markings are added as needed, completing a tough, professional surface.</p>
-        </div>
+          <h3 class="text-lg font-900 text-brand-blue">Commercial Asphalt</h3>
+        </a>
 
         <!-- Residential Concrete -->
-        <div class="service-card bg-white rounded-xl p-4 border border-slate-100 shadow-sm text-center">
-          <div class="w-10 h-10 bg-brand-amber/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+        <a href="/services/concrete.html" class="service-card bg-white rounded-xl p-8 border border-slate-100 shadow-sm text-center flex flex-col items-center gap-3 hover:border-brand-amber transition-colors">
+          <div class="w-12 h-12 bg-brand-amber/10 rounded-lg flex items-center justify-center">
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
           </div>
-          <h3 class="text-base font-900 text-brand-dark mb-2 text-center">Residential Concrete</h3>
-          <p class="text-brand-slate text-sm leading-relaxed">The project begins with site excavation and grading to ensure proper drainage. Forms are set to define the shape and borders. A compacted gravel base is laid for stability. Concrete is poured, spread evenly, and smoothed with professional tools. Finishing techniques like broom texturing enhance surface grip. Control joints are cut to prevent cracking. After a curing period to harden and strengthen the concrete, the forms are removed, revealing a clean, durable surface ready for use.</p>
-        </div>
+          <h3 class="text-lg font-900 text-brand-blue">Residential Concrete</h3>
+        </a>
 
         <!-- Commercial Concrete -->
-        <div class="service-card bg-white rounded-xl p-4 border border-slate-100 shadow-sm text-center">
-          <div class="w-10 h-10 bg-brand-amber/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+        <a href="/services/concrete.html" class="service-card bg-white rounded-xl p-8 border border-slate-100 shadow-sm text-center flex flex-col items-center gap-3 hover:border-brand-amber transition-colors">
+          <div class="w-12 h-12 bg-brand-amber/10 rounded-lg flex items-center justify-center">
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
           </div>
-          <h3 class="text-base font-900 text-brand-dark mb-2 text-center">Commercial Concrete</h3>
-          <p class="text-brand-slate text-sm leading-relaxed">The project begins with excavation, grading, and site preparation to ensure proper drainage and support heavier commercial loads. A thick, compacted aggregate base provides structural strength. Concrete is poured, spread evenly, and finished to commercial-grade standards. Precisely placed control joints and reinforcement prevent cracking under sustained traffic. After a thorough curing period and quality inspection, the surface is ready for commercial use.</p>
-        </div>
+          <h3 class="text-lg font-900 text-brand-blue">Commercial Concrete</h3>
+        </a>
 
         <!-- Sealcoating -->
-        <div class="service-card bg-white rounded-xl p-4 border border-slate-100 shadow-sm text-center">
-          <div class="w-10 h-10 bg-brand-amber/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+        <a href="/services/sealcoating.html" class="service-card bg-white rounded-xl p-8 border border-slate-100 shadow-sm text-center flex flex-col items-center gap-3 hover:border-brand-amber transition-colors">
+          <div class="w-12 h-12 bg-brand-amber/10 rounded-lg flex items-center justify-center">
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <h3 class="text-base font-900 text-brand-dark mb-2 text-center">Sealcoating</h3>
-          <p class="text-brand-slate text-sm leading-relaxed">Sealcoating is preventative maintenance for your driveway that also provides a fresh look and smooth surface. It seals small cracks before they grow larger and prevents water from seeping down to the base material. Note: alligator cracks may not be improved with sealcoating alone — larger cracks may need hot crack fill prior to application. Available for both residential and commercial properties.</p>
-        </div>
+          <h3 class="text-lg font-900 text-brand-blue">Sealcoating</h3>
+        </a>
 
         <!-- City & Village Projects -->
-        <div class="service-card bg-white rounded-xl p-4 border border-slate-100 shadow-sm text-center">
-          <div class="w-10 h-10 bg-brand-amber/10 rounded-lg flex items-center justify-center mb-3 mx-auto">
+        <a href="/services/" class="service-card bg-white rounded-xl p-8 border border-slate-100 shadow-sm text-center flex flex-col items-center gap-3 hover:border-brand-amber transition-colors">
+          <div class="w-12 h-12 bg-brand-amber/10 rounded-lg flex items-center justify-center">
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3 class="text-base font-900 text-brand-dark mb-2 text-center">City &amp; Village Projects</h3>
-          <p class="text-brand-slate text-sm leading-relaxed">The project starts with notifying residents and setting up traffic control (if applicable). Crews remove old pavement and grade the base for proper drainage. A new aggregate base is compacted for a strong foundation. Hot-mix asphalt is poured, spread, and compacted with heavy rollers for a smooth, durable surface. Curbs, sidewalks, and driveways are blended seamlessly. Final inspections ensure quality and safety. Once cured, traffic markings are added and the road is reopened to the public.</p>
-        </div>
+          <h3 class="text-lg font-900 text-brand-blue">City &amp; Village Projects</h3>
+        </a>
 
       </div>
     </div>
@@ -331,7 +385,7 @@
 
       <div class="mb-12">
         <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Our Work</p>
-        <h2 class="text-4xl lg:text-5xl font-900 text-white">The results speak<br />for themselves.</h2>
+        <h2 class="text-4xl lg:text-5xl font-900 text-brand-amber">The results speak<br />for themselves.</h2>
       </div>
 
       <!-- Infinite marquee gallery -->
@@ -386,66 +440,6 @@
 
 
   <!-- ═══════════════════════════════════════════════
-       REVIEWS
-  ═══════════════════════════════════════════════ -->
-  <section id="reviews" class="py-10 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-      <!-- Header + platform links -->
-      <div class="mb-8 text-center">
-        <h2 class="text-4xl lg:text-5xl font-900 text-brand-dark mb-5">What Customers Say</h2>
-        <div class="flex flex-wrap items-center justify-center gap-4">
-          <!-- Google -->
-          <div class="flex items-center gap-2">
-            <span class="text-xl font-900 select-none leading-none"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></span>
-            <span class="text-brand-amber font-900">5.0★</span>
-            <a href="https://maps.app.goo.gl/QhYBVJLCVPbdxj2m8" target="_blank" rel="noopener"
-               class="inline-flex items-center gap-1 bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-xs px-4 py-1.5 rounded-full transition-colors">
-              Read all Google reviews →
-            </a>
-          </div>
-          <span class="text-slate-300 hidden sm:block">|</span>
-          <!-- Yelp -->
-          <div class="flex items-center gap-2">
-            <span class="text-xl font-900 text-[#d32323] leading-none">Yelp</span>
-            <span class="text-brand-amber font-900">5.0★</span>
-            <a href="https://www.yelp.com/biz/j-and-j-pavement-repairs-arlington-heights-3" target="_blank" rel="noopener"
-               class="inline-flex items-center gap-1 bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-xs px-4 py-1.5 rounded-full transition-colors">
-              Read all Yelp reviews →
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Single combined marquee — Google & Yelp interleaved -->
-      <div class="marquee-outer">
-        <div class="marquee-track gap-5" style="animation-duration: 55s;">
-          <!-- Original set: alternating Google / Yelp -->
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"John was particularly outstanding — he worked closely with our landscaper to ensure the new driveway flowed seamlessly with the surrounding layout. The whole experience was smooth and stress-free."</p><div class="text-xs font-700 text-brand-dark">Mo M.</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Working with J&amp;J has been one of the best contractor experiences I've had to date. John was very responsive, knowledgeable, and trustworthy throughout. His crew communicated well and had great attention to detail."</p><div class="text-xs font-700 text-brand-dark">Eric M.</div><div class="text-xs text-brand-slate">Arlington Heights, IL</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"They suggested and made improvements that left my property safer, without charging more. The work still looks like new and the excellent quality has been complimented by other contractors."</p><div class="text-xs font-700 text-brand-dark">Gina V.</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Top notch in all respects! If you're deciding between multiple contractors, hire these guys."</p><div class="text-xs font-700 text-brand-dark">Dave D.</div><div class="text-xs text-brand-slate">Barrington, IL</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Professional, honest, and high quality work. John gave us a fair quote, showed up on time, and the driveway looks fantastic. Would absolutely hire again."</p><div class="text-xs font-700 text-brand-dark">Brian K.</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"John and his team are experts in the asphalt and concrete industry. The quality of their work is exceptional — the crew showed up when expected and got the work done as planned."</p><div class="text-xs font-700 text-brand-dark">Mary D.</div><div class="text-xs text-brand-slate">Arlington Heights, IL</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Great experience start to finish. The crew was clean, efficient, and respectful of our property. The new asphalt looks perfect and the price was very competitive."</p><div class="text-xs font-700 text-brand-dark">Lisa T.</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"In a very competitive business, it is good to know someone who will tell you the truth and follow up on what he says. John is extremely ethical and makes sure his work is done right."</p><div class="text-xs font-700 text-brand-dark">Tom G.</div><div class="text-xs text-brand-slate">Palatine, IL</div></div>
-          <!-- Duplicate set for seamless loop -->
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"John was particularly outstanding — he worked closely with our landscaper to ensure the new driveway flowed seamlessly with the surrounding layout. The whole experience was smooth and stress-free."</p><div class="text-xs font-700 text-brand-dark">Mo M.</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Working with J&amp;J has been one of the best contractor experiences I've had to date. John was very responsive, knowledgeable, and trustworthy throughout. His crew communicated well and had great attention to detail."</p><div class="text-xs font-700 text-brand-dark">Eric M.</div><div class="text-xs text-brand-slate">Arlington Heights, IL</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"They suggested and made improvements that left my property safer, without charging more. The work still looks like new and the excellent quality has been complimented by other contractors."</p><div class="text-xs font-700 text-brand-dark">Gina V.</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Top notch in all respects! If you're deciding between multiple contractors, hire these guys."</p><div class="text-xs font-700 text-brand-dark">Dave D.</div><div class="text-xs text-brand-slate">Barrington, IL</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Professional, honest, and high quality work. John gave us a fair quote, showed up on time, and the driveway looks fantastic. Would absolutely hire again."</p><div class="text-xs font-700 text-brand-dark">Brian K.</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"John and his team are experts in the asphalt and concrete industry. The quality of their work is exceptional — the crew showed up when expected and got the work done as planned."</p><div class="text-xs font-700 text-brand-dark">Mary D.</div><div class="text-xs text-brand-slate">Arlington Heights, IL</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#4285F4] px-2 py-0.5 rounded-full">Google</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"Great experience start to finish. The crew was clean, efficient, and respectful of our property. The new asphalt looks perfect and the price was very competitive."</p><div class="text-xs font-700 text-brand-dark">Lisa T.</div></div>
-          <div class="shrink-0 bg-slate-50 rounded-xl p-4 mx-2" style="width:280px;"><div class="flex items-center justify-between mb-2"><span class="text-brand-amber text-sm">★★★★★</span><span class="text-[10px] font-700 text-white bg-[#d32323] px-2 py-0.5 rounded-full">Yelp</span></div><p class="text-brand-dark text-sm leading-relaxed mb-3 italic">"In a very competitive business, it is good to know someone who will tell you the truth and follow up on what he says. John is extremely ethical and makes sure his work is done right."</p><div class="text-xs font-700 text-brand-dark">Tom G.</div><div class="text-xs text-brand-slate">Palatine, IL</div></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
        WHY J&J
   ═══════════════════════════════════════════════ -->
   <section class="py-14 bg-slate-50">
@@ -453,7 +447,7 @@
 
       <div class="text-center mb-10">
         <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Why Choose J&amp;J</p>
-        <h2 class="text-4xl lg:text-5xl font-900 text-brand-dark mb-5">Why Choose J&amp;J Pavement Repairs</h2>
+        <h2 class="text-4xl lg:text-5xl font-900 text-brand-blue mb-5">Why Choose J&amp;J Pavement Repairs</h2>
         <p class="text-brand-slate text-lg leading-relaxed max-w-2xl mx-auto">Our office is based in Arlington Heights, IL and we service many areas throughout Chicagoland.</p>
       </div>
 
@@ -463,7 +457,7 @@
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
           </div>
           <div>
-            <h4 class="font-800 text-brand-dark mb-1">Chamber of Commerce</h4>
+            <h4 class="font-800 text-brand-blue mb-1">Chamber of Commerce</h4>
             <p class="text-brand-slate text-sm leading-relaxed">Members of the Palatine Chamber of Commerce.</p>
           </div>
         </div>
@@ -472,7 +466,7 @@
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
           <div>
-            <h4 class="font-800 text-brand-dark mb-1">BBB Accredited</h4>
+            <h4 class="font-800 text-brand-blue mb-1">BBB Accredited</h4>
             <p class="text-brand-slate text-sm leading-relaxed">Accredited Member of the Better Business Bureau.</p>
           </div>
         </div>
@@ -481,7 +475,7 @@
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
           <div>
-            <h4 class="font-800 text-brand-dark mb-1">Licensed &amp; Bonded</h4>
+            <h4 class="font-800 text-brand-blue mb-1">Licensed &amp; Bonded</h4>
             <p class="text-brand-slate text-sm leading-relaxed">Licensed and Bonded in many surrounding suburbs.</p>
           </div>
         </div>
@@ -490,7 +484,7 @@
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <div>
-            <h4 class="font-800 text-brand-dark mb-1">Fully Insured</h4>
+            <h4 class="font-800 text-brand-blue mb-1">Fully Insured</h4>
             <p class="text-brand-slate text-sm leading-relaxed">We carry all needed forms of contractor's liability insurance.</p>
           </div>
         </div>
@@ -499,7 +493,7 @@
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
           <div>
-            <h4 class="font-800 text-brand-dark mb-1">References Available</h4>
+            <h4 class="font-800 text-brand-blue mb-1">References Available</h4>
             <p class="text-brand-slate text-sm leading-relaxed">References are readily available if needed.</p>
           </div>
         </div>
@@ -508,7 +502,7 @@
             <svg class="w-5 h-5 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
           </div>
           <div>
-            <h4 class="font-800 text-brand-dark mb-1">Always Reachable</h4>
+            <h4 class="font-800 text-brand-blue mb-1">Always Reachable</h4>
             <p class="text-brand-slate text-sm leading-relaxed">Questions? Call our office at <a href="tel:8473978848" class="text-brand-amber hover:underline">(847) 397-8848</a> or <a href="mailto:sales@jjpave.com" class="text-brand-amber hover:underline">email us</a>. We look forward to doing business with you.</p>
           </div>
         </div>
@@ -524,7 +518,7 @@
   <section id="about" class="py-20 bg-brand-dark">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Our Story</p>
-      <h2 class="text-4xl lg:text-5xl font-900 text-white mb-6">A family business built on honesty.</h2>
+      <h2 class="text-4xl lg:text-5xl font-900 text-brand-amber mb-6">A family business built on honesty.</h2>
       <p class="text-white/70 text-lg leading-relaxed mb-5">
         Concrete and pavement services are a residential, commercial and infrastructural need. Whether you're looking for a driveway, parking lot or pavement repair, J&amp;J can meet your residential or commercial needs. Established in 1982 by John Pancorvo Sr. and now being operated by his son John Pancorvo Jr.
       </p>
@@ -591,66 +585,6 @@
 
 
   <!-- ═══════════════════════════════════════════════
-       SERVICE AREA
-  ═══════════════════════════════════════════════ -->
-  <section id="service-area" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-      <div class="mb-12">
-        <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Where We Work</p>
-        <h2 class="text-4xl lg:text-5xl font-900 text-brand-dark">Serving 33 NW Chicagoland suburbs.</h2>
-        <p class="text-brand-slate mt-4 text-lg">Based in Arlington Heights. Licensed and bonded throughout the area.</p>
-      </div>
-
-      <div class="flex flex-wrap gap-2">
-        <?php
-        $suburbs = ["Arlington Heights","Barrington","Bartlett","Buffalo Grove","Cook County","Deer Park","Deerfield","Des Plaines","Elgin","Elk Grove Village","Glendale Heights","Glenview","Hanover Park","Hawthorne Woods","Highland Park","Hoffman Estates","Inverness","Kildeer","Lake Zurich","Long Grove","Mount Prospect","Naperville","Northbrook","Palatine","Prospect Heights","Riverwoods","Rolling Meadows","St. Charles","Schaumburg","South Barrington","Vernon Hills","Wheeling"];
-        foreach ($suburbs as $s) {
-          echo "<span class='suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full cursor-default'>$s</span>";
-        }
-        ?>
-      </div>
-      <!-- Static fallback if not PHP -->
-      <noscript><div class="flex flex-wrap gap-2 mt-2">
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Arlington Heights</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Barrington</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Bartlett</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Buffalo Grove</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Des Plaines</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Elgin</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Elk Grove Village</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Glenview</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Highland Park</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Hoffman Estates</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Lake Zurich</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Mount Prospect</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Naperville</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Northbrook</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Palatine</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Schaumburg</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Vernon Hills</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">Wheeling</span>
-        <span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full">+ 15 more</span>
-      </div></noscript>
-
-      <!-- JS-rendered suburb pills -->
-      <script>
-        (function() {
-          const suburbs = ["Arlington Heights","Barrington","Bartlett","Buffalo Grove","Cook County","Deer Park","Deerfield","Des Plaines","Elgin","Elk Grove Village","Glendale Heights","Glenview","Hanover Park","Hawthorne Woods","Highland Park","Hoffman Estates","Inverness","Kildeer","Lake Zurich","Long Grove","Mount Prospect","Naperville","Northbrook","Palatine","Prospect Heights","Riverwoods","Rolling Meadows","St. Charles","Schaumburg","South Barrington","Vernon Hills","Wheeling"];
-          const container = document.querySelector('#service-area .flex.flex-wrap');
-          if (container) {
-            container.innerHTML = suburbs.map(s =>
-              `<span class="suburb-pill bg-slate-100 text-brand-dark text-sm font-500 px-4 py-2 rounded-full cursor-default">${s}</span>`
-            ).join('');
-          }
-        })();
-      </script>
-
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
        CONTACT / CTA
   ═══════════════════════════════════════════════ -->
   <section id="contact" class="py-24 bg-slate-50">
@@ -660,7 +594,7 @@
         <!-- Left: Info -->
         <div>
           <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Get a Free Quote</p>
-          <h2 class="text-4xl lg:text-5xl font-900 text-brand-dark mb-6">Ready to get started?</h2>
+          <h2 class="text-4xl lg:text-5xl font-900 text-brand-blue mb-6">Ready to get started?</h2>
           <p class="text-brand-slate text-lg leading-relaxed mb-10">Fill out the form or give us a call. We'll get back to you fast with a transparent, no-obligation quote.</p>
 
           <div class="space-y-6">
@@ -774,7 +708,7 @@
   ═══════════════════════════════════════════════ -->
   <footer class="bg-brand-darker text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
 
         <!-- Brand -->
         <div class="lg:col-span-2">
@@ -796,6 +730,19 @@
             <li><a href="services/concrete.html" class="hover:text-brand-amber transition-colors">Concrete Work</a></li>
             <li><a href="services/sealcoating.html" class="hover:text-brand-amber transition-colors">Sealcoating</a></li>
             <li><a href="services/" class="hover:text-brand-amber transition-colors">All Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Pages -->
+        <div>
+          <h5 class="font-700 text-white mb-4 text-sm uppercase tracking-wider">Pages</h5>
+          <ul class="space-y-2 text-sm text-white/50">
+            <li><a href="/" class="hover:text-brand-amber transition-colors">Home</a></li>
+            <li><a href="/services/" class="hover:text-brand-amber transition-colors">Services</a></li>
+            <li><a href="/our-work.html" class="hover:text-brand-amber transition-colors">Our Work</a></li>
+            <li><a href="/about.html" class="hover:text-brand-amber transition-colors">About</a></li>
+            <li><a href="/service-area.html" class="hover:text-brand-amber transition-colors">Service Area</a></li>
+            <li><a href="/contact.html" class="hover:text-brand-amber transition-colors">Contact</a></li>
           </ul>
         </div>
 
