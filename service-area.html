@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -17,6 +18,7 @@
             brand: {
               dark: '#0f172a',
               darker: '#080f1e',
+              blue: '#1a3c7a',
               amber: '#f59e0b',
               'amber-dark': '#d97706',
               'amber-light': '#fbbf24',
@@ -101,82 +103,22 @@
   </section>
 
 
-  <!-- FEATURED LOCATIONS -->
-  <section class="py-24 bg-white">
+  <!-- TOWNS -->
+  <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
-      <div class="mb-10">
-        <h2 class="text-3xl font-900 text-brand-dark mb-3">Featured locations</h2>
-        <p class="text-brand-slate text-lg">Based in Arlington Heights. Licensed and bonded throughout the area.</p>
-      </div>
-
-      <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
-
-        <a href="/service-area/arlington-heights.html" class="location-link block rounded-lg p-4 -mx-4">
-          <h3 class="text-lg font-700 text-brand-dark">Arlington Heights</h3>
-          <p class="text-brand-slate text-sm mt-1">Our home base since 1982</p>
-        </a>
-
-        <a href="/service-area/palatine.html" class="location-link block rounded-lg p-4 -mx-4">
-          <h3 class="text-lg font-700 text-brand-dark">Palatine</h3>
-          <p class="text-brand-slate text-sm mt-1">Neighboring suburb, residential and commercial</p>
-        </a>
-
-        <a href="/service-area/schaumburg.html" class="location-link block rounded-lg p-4 -mx-4">
-          <h3 class="text-lg font-700 text-brand-dark">Schaumburg</h3>
-          <p class="text-brand-slate text-sm mt-1">Major commercial hub, Woodfield area</p>
-        </a>
-
-        <a href="/service-area/barrington.html" class="location-link block rounded-lg p-4 -mx-4">
-          <h3 class="text-lg font-700 text-brand-dark">Barrington</h3>
-          <p class="text-brand-slate text-sm mt-1">Upscale residential, estate properties</p>
-        </a>
-
-        <a href="/service-area/mount-prospect.html" class="location-link block rounded-lg p-4 -mx-4">
-          <h3 class="text-lg font-700 text-brand-dark">Mount Prospect</h3>
-          <p class="text-brand-slate text-sm mt-1">Adjacent to Arlington Heights, strong residential demand</p>
-        </a>
-
-        <a href="/service-area/buffalo-grove.html" class="location-link block rounded-lg p-4 -mx-4">
-          <h3 class="text-lg font-700 text-brand-dark">Buffalo Grove</h3>
-          <p class="text-brand-slate text-sm mt-1">Family neighborhoods, residential paving</p>
-        </a>
-
-        <a href="/service-area/elk-grove-village.html" class="location-link block rounded-lg p-4 -mx-4">
-          <h3 class="text-lg font-700 text-brand-dark">Elk Grove Village</h3>
-          <p class="text-brand-slate text-sm mt-1">Industrial park area, commercial and residential</p>
-        </a>
-
-        <a href="/service-area/des-plaines.html" class="location-link block rounded-lg p-4 -mx-4">
-          <h3 class="text-lg font-700 text-brand-dark">Des Plaines</h3>
-          <p class="text-brand-slate text-sm mt-1">O'Hare corridor, commercial and residential</p>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ADDITIONAL COMMUNITIES -->
-  <section class="py-16 bg-slate-50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-800 text-brand-dark mb-4">Additional communities we serve</h2>
+      <h2 class="text-2xl font-800 text-brand-blue mb-4">Areas We Serve</h2>
       <p class="text-brand-slate text-lg leading-relaxed">
-        We also serve Bartlett, Cook County, Deer Park, Deerfield, Elgin, Glendale Heights, Glenview, Hanover Park, Hawthorne Woods, Highland Park, Hoffman Estates, Inverness, Kildeer, Lake Zurich, Long Grove, Naperville, Northbrook, Prospect Heights, Riverwoods, Rolling Meadows, St. Charles, South Barrington, Vernon Hills, and Wheeling.
+        J&amp;J Pavement Repairs proudly serves Arlington Heights, Barrington, Bartlett, Buffalo Grove, Cook County, Deer Park, Deerfield, Des Plaines, Elgin, Elk Grove Village, Glendale Heights, Glenview, Hanover Park, Hawthorne Woods, Highland Park, Hoffman Estates, Inverness, Kildeer, Lake Zurich, Long Grove, Mount Prospect, Naperville, Northbrook, Palatine, Prospect Heights, Riverwoods, Rolling Meadows, St. Charles, Schaumburg, South Barrington, Vernon Hills, and Wheeling.
       </p>
     </div>
   </section>
 
 
   <!-- MAP -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl overflow-hidden shadow-lg">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1d190268!2d-88.0499!3d42.0750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1710000000000"
-          width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="J&J Pavement Repairs service area - Chicagoland NW suburbs">
-        </iframe>
+      <div class="rounded-2xl overflow-hidden shadow-lg" style="height:520px;">
+        <div id="service-map" style="height:100%;width:100%;"></div>
       </div>
     </div>
   </section>
@@ -186,7 +128,7 @@
   <section class="py-16 bg-white">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
-        <h3 class="text-2xl font-800 text-brand-dark mb-6">Our Office</h3>
+        <h3 class="text-2xl font-800 text-brand-blue mb-6">Our Office</h3>
         <div class="grid sm:grid-cols-3 gap-6">
 
           <div class="flex items-start gap-3">
@@ -270,7 +212,7 @@
         </div>
 
         <div>
-          <h4 class="text-white font-semibold text-lg mb-4">Company</h4>
+          <h4 class="text-white font-semibold text-lg mb-4">Pages</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="/" class="hover:text-brand-amber transition">Home</a></li>
             <li><a href="/services/" class="hover:text-brand-amber transition">Services</a></li>
@@ -308,6 +250,46 @@
     const mobileMenu = document.getElementById('mobile-menu');
     hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
     function closeMobile() { mobileMenu.classList.remove('open'); }
+  </script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLs=" crossorigin=""></script>
+  <script>
+    var map = L.map('service-map', {
+      center: [42.09, -87.98],
+      zoom: 10,
+      scrollWheelZoom: false
+    });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+
+    // Approximate convex hull of J&J's 33-suburb service area
+    var serviceArea = L.polygon([
+      [42.225, -87.957],
+      [42.230, -88.040],
+      [42.200, -88.083],
+      [42.165, -88.137],
+      [42.077, -88.132],
+      [41.999, -88.185],
+      [41.914, -88.308],
+      [42.035, -88.283],
+      [41.920, -88.077],
+      [42.003, -87.997],
+      [42.033, -87.883],
+      [42.070, -87.787],
+      [42.125, -87.827],
+      [42.170, -87.844],
+      [42.181, -87.800]
+    ], {
+      color: '#d97706',
+      fillColor: '#f59e0b',
+      fillOpacity: 0.25,
+      weight: 2
+    }).addTo(map);
+
+    L.marker([42.0883, -87.9806]).addTo(map)
+      .bindPopup('<b>J&amp;J Pavement Repairs</b><br>12 W. College Dr. Unit D<br>Arlington Heights, IL 60004')
+      .openPopup();
   </script>
 
 </body>
