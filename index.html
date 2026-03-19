@@ -82,12 +82,12 @@
 
         <!-- Desktop Nav Links -->
         <div class="hidden lg:flex items-center gap-8">
-          <a href="#services"     class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Services</a>
-          <a href="#gallery"      class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Our Work</a>
-          <a href="#reviews"      class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Reviews</a>
-          <a href="#about"        class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">About</a>
-          <a href="#service-area" class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Service Area</a>
-          <a href="#contact"      class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Contact</a>
+          <a href="/"                  class="text-sm font-600 text-white hover:text-brand-amber transition-colors">Home</a>
+          <a href="/services/"         class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Services</a>
+          <a href="/our-work.html"     class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Our Work</a>
+          <a href="/about.html"        class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">About</a>
+          <a href="/service-area.html" class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Service Area</a>
+          <a href="/contact.html"      class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Contact</a>
         </div>
 
         <!-- Desktop CTA -->
@@ -95,7 +95,7 @@
           <a href="tel:8473978848" class="text-white font-700 text-sm hover:text-brand-amber transition-colors">
             (847) 397-8848
           </a>
-          <a href="#contact" class="bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-sm px-5 py-2.5 rounded-full transition-colors">
+          <a href="/contact.html" class="bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-sm px-5 py-2.5 rounded-full transition-colors">
             Get a Free Quote
           </a>
         </div>
@@ -111,15 +111,15 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="lg:hidden bg-brand-darker pb-6 px-2 rounded-b-2xl">
         <div class="flex flex-col gap-1 pt-2">
-          <a href="#services"     class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Services</a>
-          <a href="#gallery"      class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Our Work</a>
-          <a href="#reviews"      class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Reviews</a>
-          <a href="#about"        class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">About</a>
-          <a href="#service-area" class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Service Area</a>
-          <a href="#contact"      class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Contact</a>
+          <a href="/"                  class="px-4 py-3 text-white hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Home</a>
+          <a href="/services/"         class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Services</a>
+          <a href="/our-work.html"     class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Our Work</a>
+          <a href="/about.html"        class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">About</a>
+          <a href="/service-area.html" class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Service Area</a>
+          <a href="/contact.html"      class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Contact</a>
           <div class="border-t border-white/10 mt-2 pt-4 px-4 flex flex-col gap-3">
             <a href="tel:8473978848" class="text-brand-amber font-700">(847) 397-8848</a>
-            <a href="#contact" class="bg-brand-amber text-brand-dark font-700 px-5 py-2.5 rounded-full text-center" onclick="closeMobile()">Get a Free Quote</a>
+            <a href="/contact.html" class="bg-brand-amber text-brand-dark font-700 px-5 py-2.5 rounded-full text-center" onclick="closeMobile()">Get a Free Quote</a>
           </div>
         </div>
       </div>
@@ -212,7 +212,7 @@
           </div>
         </div>
 
-        <a href="#contact" class="bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-sm px-6 py-2.5 rounded-full transition-colors whitespace-nowrap">
+        <a href="/contact.html" class="bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-sm px-6 py-2.5 rounded-full transition-colors whitespace-nowrap">
           Get a Free Quote &rarr;
         </a>
 
@@ -677,7 +677,8 @@
 
         <!-- Right: Form -->
         <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
-          <form action="mailto:sales@jjpave.com" method="post" enctype="text/plain" class="space-y-5">
+          <!-- TODO: Replace YOUR_FORM_ID with your Formspree form ID (formspree.io → New Form → copy the ID) -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
             <div class="grid grid-cols-2 gap-4">
               <div>
                 <label class="block text-sm font-600 text-brand-dark mb-1.5">First Name</label>
@@ -745,12 +746,10 @@
         <div>
           <h5 class="font-700 text-white mb-4 text-sm uppercase tracking-wider">Services</h5>
           <ul class="space-y-2 text-sm text-white/50">
-            <li><a href="#services" class="hover:text-brand-amber transition-colors">Residential Asphalt</a></li>
-            <li><a href="#services" class="hover:text-brand-amber transition-colors">Commercial Asphalt</a></li>
-            <li><a href="#services" class="hover:text-brand-amber transition-colors">Residential Concrete</a></li>
-            <li><a href="#services" class="hover:text-brand-amber transition-colors">Commercial Concrete</a></li>
-            <li><a href="#services" class="hover:text-brand-amber transition-colors">Sealcoating</a></li>
-            <li><a href="#services" class="hover:text-brand-amber transition-colors">City &amp; Village Projects</a></li>
+            <li><a href="/services/asphalt.html" class="hover:text-brand-amber transition-colors">Asphalt Paving</a></li>
+            <li><a href="/services/concrete.html" class="hover:text-brand-amber transition-colors">Concrete Work</a></li>
+            <li><a href="/services/sealcoating.html" class="hover:text-brand-amber transition-colors">Sealcoating</a></li>
+            <li><a href="/services/" class="hover:text-brand-amber transition-colors">All Services</a></li>
           </ul>
         </div>
 

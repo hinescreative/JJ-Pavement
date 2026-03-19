@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asphalt Paving & Repair | J&J Pavement Repairs — Arlington Heights, IL</title>
+  <meta name="description" content="New asphalt driveways, parking lots, repairs & resurfacing. Proper grading, compacted base, precision finishing. Family-owned since 1982. Free quotes." />
+  <meta property="og:title" content="Asphalt Paving & Repair | J&J Pavement Repairs — Arlington Heights, IL" />
+  <meta property="og:description" content="New asphalt driveways, parking lots, repairs & resurfacing. Proper grading, compacted base, precision finishing. Family-owned since 1982. Free quotes." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark:   '#0f172a',
+              darker: '#080f1e',
+              amber:  '#f59e0b',
+              'amber-dark': '#d97706',
+              'amber-light': '#fbbf24',
+              slate:  '#64748b',
+            }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .nav-scrolled { background: rgba(8,15,30,0.97) !important; box-shadow: 0 2px 20px rgba(0,0,0,0.4); }
+    .service-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+    .gallery-item { overflow: hidden; }
+    .gallery-item img { transition: transform 0.4s ease; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .review-card { border-left: 4px solid #f59e0b; }
+    .suburb-pill { transition: background 0.15s; }
+    .suburb-pill:hover { background: #f59e0b; color: #0f172a; }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+  </style>
+</head>
+
+<body class="font-sans text-brand-dark antialiased">
+
+  <!-- NAV -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brand-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center gap-3 shrink-0">
+          <img src="https://jjpave.com/wp-content/uploads/2025/04/jj-logo-vector-no-background-1.png"
+               alt="J&J Pavement Repairs logo" class="h-12 w-auto" />
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="/"                class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Home</a>
+          <a href="/services/"       class="text-sm font-600 text-brand-amber transition-colors">Services</a>
+          <a href="/our-work.html"   class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Our Work</a>
+          <a href="/about.html"      class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">About</a>
+          <a href="/service-area.html" class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Service Area</a>
+          <a href="/contact.html"    class="text-sm font-600 text-white/80 hover:text-brand-amber transition-colors">Contact</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="tel:8473978848" class="text-white font-700 text-sm hover:text-brand-amber transition-colors">(847) 397-8848</a>
+          <a href="/contact.html" class="bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-700 text-sm px-5 py-2.5 rounded-full transition-colors">Get a Free Quote</a>
+        </div>
+        <button id="hamburger" class="lg:hidden text-white p-2" aria-label="Open menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="lg:hidden bg-brand-darker pb-6 px-2 rounded-b-2xl">
+        <div class="flex flex-col gap-1 pt-2">
+          <a href="/"                class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Home</a>
+          <a href="/services/"       class="px-4 py-3 text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Services</a>
+          <a href="/our-work.html"   class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Our Work</a>
+          <a href="/about.html"      class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">About</a>
+          <a href="/service-area.html" class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Service Area</a>
+          <a href="/contact.html"    class="px-4 py-3 text-white/80 hover:text-brand-amber font-500 rounded-lg transition-colors" onclick="closeMobile()">Contact</a>
+          <div class="border-t border-white/10 mt-2 pt-4 px-4 flex flex-col gap-3">
+            <a href="tel:8473978848" class="text-brand-amber font-700">(847) 397-8848</a>
+            <a href="/contact.html" class="bg-brand-amber text-brand-dark font-700 px-5 py-2.5 rounded-full text-center" onclick="closeMobile()">Get a Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HEADER -->
+  <section class="bg-brand-dark pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-3 mb-6">
+        <a href="/services/" class="text-white/50 hover:text-brand-amber text-sm font-500 transition-colors">Services</a>
+        <span class="text-white/30 text-sm">/</span>
+        <span class="text-brand-amber text-sm font-600">Asphalt</span>
+      </div>
+      <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Asphalt Services</p>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-900 text-white leading-tight mb-6">
+        Built to last.<br />Finished to impress.
+      </h1>
+      <p class="text-white/60 text-lg max-w-2xl leading-relaxed">
+        New driveways, parking lots, repairs, and resurfacing — done right by a crew that's been paving Chicagoland since 1982.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- RESIDENTIAL ASPHALT -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Residential</p>
+          <h2 class="text-3xl sm:text-4xl font-900 text-brand-dark mb-6">Driveways built the way they should be.</h2>
+          <p class="text-brand-slate text-lg leading-relaxed mb-6">
+            Whether it's a brand-new driveway, a full replacement, or patching and repair work, we do it the right way. Proper grading to direct water away from your foundation. A compacted aggregate base that won't shift or settle. And precision machine finishing for a smooth, even surface.
+          </p>
+          <p class="text-brand-slate leading-relaxed mb-6">
+            Most residential asphalt problems start below the surface — bad grading, insufficient base, or rushing the job. We don't cut those corners. That's why our driveways last decades, not years.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-amber shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-brand-slate">New driveway installation &amp; full replacement</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-amber shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-brand-slate">Repairs, patching &amp; resurfacing</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-amber shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-brand-slate">Proper grading &amp; drainage</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-amber shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-brand-slate">Compacted aggregate base</span>
+            </li>
+          </ul>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/mU9z3ZRb02qC4vXQePXOhw/l.jpg"
+               alt="Residential asphalt driveway by J&J Pavement Repairs"
+               class="w-full h-full object-cover aspect-[4/3]" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- COMMERCIAL ASPHALT -->
+  <section class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-lg">
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/x97vA-0Z43S83-B6OV7_cw/l.jpg"
+               alt="Commercial asphalt parking lot by J&J Pavement Repairs"
+               class="w-full h-full object-cover aspect-[4/3]" loading="lazy" />
+        </div>
+        <div class="order-1 lg:order-2">
+          <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Commercial</p>
+          <h2 class="text-3xl sm:text-4xl font-900 text-brand-dark mb-6">Parking lots and roads built for heavy traffic.</h2>
+          <p class="text-brand-slate text-lg leading-relaxed mb-6">
+            Commercial asphalt takes a different kind of beating. We use industrial rollers, engineer proper drainage, and build thicker base layers designed for truck traffic, daily wear, and Chicagoland freeze-thaw cycles.
+          </p>
+          <p class="text-brand-slate leading-relaxed mb-6">
+            From parking lots and access roads to full commercial driveways, we handle the entire scope — including line striping, ADA compliance markings, and coordination with your timeline.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-amber shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-brand-slate">Parking lots &amp; access roads</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-amber shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-brand-slate">Industrial-grade rolling &amp; compaction</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-amber shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-brand-slate">Drainage engineering &amp; line striping</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-amber shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-brand-slate">Heavy-traffic base design</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROCESS -->
+  <section class="py-24 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">Our Process</p>
+        <h2 class="text-4xl lg:text-5xl font-900 text-white">How It Works</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="text-center">
+          <div class="w-14 h-14 bg-brand-amber rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-brand-dark font-900 text-xl">1</span>
+          </div>
+          <h4 class="text-white font-700 mb-2">Free Estimate &amp; Site Visit</h4>
+          <p class="text-white/50 text-sm leading-relaxed">We come out, assess the site, and give you a transparent quote — no pressure, no surprises.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-14 h-14 bg-brand-amber rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-brand-dark font-900 text-xl">2</span>
+          </div>
+          <h4 class="text-white font-700 mb-2">Prep &amp; Grading</h4>
+          <p class="text-white/50 text-sm leading-relaxed">Old material removed. The site is graded for proper water runoff and drainage away from structures.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-14 h-14 bg-brand-amber rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-brand-dark font-900 text-xl">3</span>
+          </div>
+          <h4 class="text-white font-700 mb-2">Base Compaction</h4>
+          <p class="text-white/50 text-sm leading-relaxed">Aggregate base is laid and machine-compacted to create a stable foundation that won't shift or settle.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-14 h-14 bg-brand-amber rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-brand-dark font-900 text-xl">4</span>
+          </div>
+          <h4 class="text-white font-700 mb-2">Asphalt Pour &amp; Finishing</h4>
+          <p class="text-white/50 text-sm leading-relaxed">Hot-mix asphalt is poured and precision-rolled for a smooth, even surface with clean edges.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-14 h-14 bg-brand-amber rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-brand-dark font-900 text-xl">5</span>
+          </div>
+          <h4 class="text-white font-700 mb-2">Cleanup &amp; Inspection</h4>
+          <p class="text-white/50 text-sm leading-relaxed">The site is cleaned up. John inspects every project personally before we call it done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- REVIEW -->
+  <section class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="review-card bg-slate-50 rounded-2xl p-10">
+        <div class="text-brand-amber text-xl mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="text-brand-dark text-lg leading-relaxed mb-6 italic">
+          "Working with J&J has been one of the best contractor experiences I've had to date. John was very responsive, knowledgeable, and trustworthy throughout. His crew communicated well, didn't rush, and had good attention to detail."
+        </p>
+        <div class="text-base font-700 text-brand-dark">Eric M.</div>
+        <div class="text-sm text-brand-slate">Arlington Heights, IL &middot; Yelp</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-900 text-brand-dark mb-4">Ready to get your asphalt project started?</h2>
+      <p class="text-brand-slate text-lg mb-8 max-w-xl mx-auto">Call us or send a message for a free, no-obligation estimate. We typically respond within a few hours.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="tel:8473978848" class="border-2 border-brand-dark hover:border-brand-amber text-brand-dark hover:text-brand-amber font-700 text-base px-8 py-4 rounded-full transition-colors">
+          (847) 397-8848
+        </a>
+        <a href="/contact.html" class="bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-800 text-base px-8 py-4 rounded-full transition-colors shadow-lg shadow-brand-amber/20">
+          Get a Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-darker text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <div>
+          <img src="https://jjpave.com/wp-content/uploads/2025/04/jj-logo-vector-no-background-1.png"
+               alt="J&J Pavement Repairs" class="h-12 w-auto mb-4" />
+          <p class="text-white/50 text-sm leading-relaxed mb-5">Ready For The Road Ahead.<br />Family-owned asphalt &amp; concrete contractor<br />serving NW Chicagoland since 1982.</p>
+          <div class="flex items-center gap-3 flex-wrap">
+            <span class="text-xs font-700 bg-brand-amber text-brand-dark px-3 py-1 rounded-full">A+ BBB</span>
+            <span class="text-xs font-700 bg-white/10 text-white px-3 py-1 rounded-full">4.9&#9733; Yelp</span>
+            <span class="text-xs font-700 bg-white/10 text-white px-3 py-1 rounded-full">5.0&#9733; Google</span>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="font-700 text-white mb-4 text-sm uppercase tracking-wider">Services</h5>
+          <ul class="space-y-2 text-sm text-white/50">
+            <li><a href="/services/asphalt.html" class="hover:text-brand-amber transition-colors">Residential Asphalt</a></li>
+            <li><a href="/services/asphalt.html" class="hover:text-brand-amber transition-colors">Commercial Asphalt</a></li>
+            <li><a href="/services/concrete.html" class="hover:text-brand-amber transition-colors">Residential Concrete</a></li>
+            <li><a href="/services/concrete.html" class="hover:text-brand-amber transition-colors">Commercial Concrete</a></li>
+            <li><a href="/services/sealcoating.html" class="hover:text-brand-amber transition-colors">Sealcoating</a></li>
+            <li><a href="/services/" class="hover:text-brand-amber transition-colors">City &amp; Village Projects</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-700 text-white mb-4 text-sm uppercase tracking-wider">Pages</h5>
+          <ul class="space-y-2 text-sm text-white/50">
+            <li><a href="/" class="hover:text-brand-amber transition-colors">Home</a></li>
+            <li><a href="/services/" class="hover:text-brand-amber transition-colors">Services</a></li>
+            <li><a href="/our-work.html" class="hover:text-brand-amber transition-colors">Our Work</a></li>
+            <li><a href="/about.html" class="hover:text-brand-amber transition-colors">About</a></li>
+            <li><a href="/service-area.html" class="hover:text-brand-amber transition-colors">Service Area</a></li>
+            <li><a href="/contact.html" class="hover:text-brand-amber transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-700 text-white mb-4 text-sm uppercase tracking-wider">Contact</h5>
+          <ul class="space-y-3 text-sm text-white/50">
+            <li><a href="tel:8473978848" class="hover:text-brand-amber transition-colors">(847) 397-8848</a></li>
+            <li><a href="mailto:sales@jjpave.com" class="hover:text-brand-amber transition-colors">sales@jjpave.com</a></li>
+            <li class="leading-relaxed">12 W. College Dr. Unit D<br />Arlington Heights, IL 60004</li>
+            <li class="pt-1">Mon&ndash;Sat: 9:00 AM &ndash; 5:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/30">
+        <span>&copy; 2026 J&J Pavement Repairs, Inc. All Rights Reserved.</span>
+        <span>12 W. College Dr. Unit D, Arlington Heights, IL 60004</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('nav-scrolled');
+      } else {
+        navbar.classList.remove('nav-scrolled');
+      }
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    function closeMobile() {
+      mobileMenu.classList.remove('open');
+    }
+  </script>
+
+</body>
+</html>
