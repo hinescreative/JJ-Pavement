@@ -132,27 +132,49 @@
   ═══════════════════════════════════════════════ -->
   <section id="top" class="hero-section min-h-screen flex items-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 w-full">
-      <div class="max-w-2xl">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-        <!-- Logo -->
-        <div class="mb-8">
-          <img src="https://jjpave.com/wp-content/uploads/2025/04/jj-logo-vector-no-background-1.png"
-               alt="J&J Pavement Repairs"
-               class="h-28 sm:h-36 w-auto" />
-        </div>
-
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-900 leading-[1.1] mb-5 text-white">
-          Chicagoland's Trusted<br />Pavement Contractor.
-        </h1>
-
-        <p class="text-lg text-white/60 mb-10 max-w-lg leading-relaxed">
-          Asphalt, concrete, and sealcoating — done right by a family serving NW Illinois for over 40 years.
-        </p>
-
-        <div class="flex flex-wrap gap-4 mb-16">
-          <a href="tel:8473978848" class="border-2 border-white/30 hover:border-brand-amber text-white hover:text-brand-amber font-700 text-base px-8 py-4 rounded-full transition-colors">
+        <!-- Left: Brand -->
+        <div>
+          <div class="mb-8">
+            <img src="https://jjpave.com/wp-content/uploads/2025/04/jj-logo-vector-no-background-1.png"
+                 alt="J&J Pavement Repairs"
+                 class="h-28 sm:h-36 w-auto" />
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-900 leading-[1.1] mb-5 text-white">
+            Chicagoland's Trusted<br />Pavement Contractor.
+          </h1>
+          <p class="text-lg text-white/60 mb-10 leading-relaxed">
+            Asphalt, concrete, and sealcoating — done right by a family serving NW Illinois for over 40 years.
+          </p>
+          <a href="tel:8473978848" class="inline-flex border-2 border-white/30 hover:border-brand-amber text-white hover:text-brand-amber font-700 text-base px-8 py-4 rounded-full transition-colors">
             (847) 397-8848
           </a>
+        </div>
+
+        <!-- Right: Quote Form -->
+        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
+          <h2 class="text-white font-800 text-xl mb-1">Get a Free Quote</h2>
+          <p class="text-white/50 text-sm mb-6">We respond within a few hours during business hours.</p>
+          <!-- Replace action URL with your GHL form webhook or embed URL -->
+          <form action="YOUR_GHL_FORM_URL" method="POST" class="flex flex-col gap-4">
+            <div class="grid grid-cols-2 gap-3">
+              <input type="text" name="firstName" placeholder="First Name"
+                     class="bg-white/10 border border-white/20 text-white placeholder-white/40 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-amber" />
+              <input type="text" name="lastName" placeholder="Last Name"
+                     class="bg-white/10 border border-white/20 text-white placeholder-white/40 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-amber" />
+            </div>
+            <input type="email" name="email" placeholder="Email address" required
+                   class="bg-white/10 border border-white/20 text-white placeholder-white/40 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-amber" />
+            <input type="tel" name="phone" placeholder="Phone number"
+                   class="bg-white/10 border border-white/20 text-white placeholder-white/40 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-amber" />
+            <textarea name="message" placeholder="Tell us about your project..." rows="3"
+                      class="bg-white/10 border border-white/20 text-white placeholder-white/40 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-amber resize-none"></textarea>
+            <button type="submit"
+                    class="bg-brand-amber hover:bg-brand-amber-dark text-brand-dark font-800 py-3.5 rounded-xl transition-colors text-sm">
+              Send My Request
+            </button>
+          </form>
         </div>
 
       </div>
@@ -281,13 +303,12 @@
         </div>
 
         <!-- City & Village Projects -->
-        <div class="service-card bg-brand-dark rounded-2xl p-8 border border-brand-dark shadow-sm">
-          <div class="w-12 h-12 bg-brand-amber/20 rounded-xl flex items-center justify-center mb-5">
+        <div class="service-card bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
+          <div class="w-12 h-12 bg-brand-amber/10 rounded-xl flex items-center justify-center mb-5">
             <svg class="w-6 h-6 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3 class="text-xl font-800 text-white mb-3">City &amp; Village Projects</h3>
-          <p class="text-white/60 leading-relaxed">The project starts with notifying residents and setting up traffic control (if applicable). Crews remove old pavement and grade the base for proper drainage. A new aggregate base is compacted for a strong foundation. Hot-mix asphalt is poured, spread, and compacted with heavy rollers for a smooth, durable surface. Curbs, sidewalks, and driveways are blended seamlessly. Final inspections ensure quality and safety. Once cured, traffic markings are added and the road is reopened to the public.</p>
-          <div class="mt-5 inline-block text-brand-amber text-sm font-700">Most contractors can't do this →</div>
+          <h3 class="text-xl font-800 text-brand-dark mb-3">City &amp; Village Projects</h3>
+          <p class="text-brand-slate leading-relaxed">The project starts with notifying residents and setting up traffic control (if applicable). Crews remove old pavement and grade the base for proper drainage. A new aggregate base is compacted for a strong foundation. Hot-mix asphalt is poured, spread, and compacted with heavy rollers for a smooth, durable surface. Curbs, sidewalks, and driveways are blended seamlessly. Final inspections ensure quality and safety. Once cured, traffic markings are added and the road is reopened to the public.</p>
         </div>
 
       </div>
@@ -306,25 +327,35 @@
         <h2 class="text-4xl lg:text-5xl font-900 text-white">The results speak<br />for themselves.</h2>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-        <!-- Completed project photos first -->
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/mU9z3ZRb02qC4vXQePXOhw/l.jpg"   alt="Finished asphalt driveway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/9bTR7PLDRPffwghfhr_Evg/l.jpg"   alt="Finished concrete driveway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/Wzs5PBLf5a1xxpD_bdXL0A/l.jpg"   alt="Finished residential driveway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/auaVtYW51T-WvmP68N1JOg/l.jpg"   alt="Finished asphalt driveway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/dw9NvfCwfzDx4gZkQ7Ht5Q/l.jpg"   alt="Commercial parking lot with striping" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/34z6wza5xbq9hN5D0NcVHw/l.jpg"   alt="Finished concrete driveway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/dU7qXKKeO2nrczHfguZSyg/l.jpg"   alt="Finished brick and stone patio" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/CKYqLQeP82N0ZfWETR8q_A/l.jpg"   alt="Finished concrete patio" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/8UWBa6p6luJ3aWUYsL1HlA/l.jpg"   alt="Finished driveway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/ZfRfYpSRIZOqawNnxb9kcQ/l.jpg"   alt="Finished driveway and walkway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/Bx24uxcaFf9faJsnM-NnJg/l.jpg"   alt="Finished concrete patio" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/lz2Fe4M4ZcJaOeivzy8tnA/l.jpg"   alt="Finished concrete walkway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/YBq2CwwABMUt3OenQYshmQ/l.jpg"   alt="Finished asphalt driveway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/49yFlRqLaqCIj75tG2FVhg/l.jpg"   alt="Finished brick patio" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <!-- Team at work -->
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/x97vA-0Z43S83-B6OV7_cw/l.jpg"   alt="J&J crew at work" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
-        <div class="gallery-item rounded-xl aspect-square"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/VzqhPRLQiAV6b_0EiMf_ZQ/l.jpg"   alt="J&J crew paving a driveway" class="w-full h-full object-cover rounded-xl" loading="lazy" /></div>
+      <!-- Slider controls -->
+      <div class="flex items-center gap-3 mb-5">
+        <button onclick="slideGallery(-1)" class="w-10 h-10 rounded-full border border-white/20 hover:border-brand-amber text-white hover:text-brand-amber flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button onclick="slideGallery(1)" class="w-10 h-10 rounded-full border border-white/20 hover:border-brand-amber text-white hover:text-brand-amber flex items-center justify-center transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Scrollable slider -->
+      <div id="gallery-slider" class="flex gap-3 overflow-x-auto pb-2 scroll-smooth" style="scroll-snap-type: x mandatory; -ms-overflow-style: none; scrollbar-width: none;">
+        <style>#gallery-slider::-webkit-scrollbar { display: none; }</style>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/mU9z3ZRb02qC4vXQePXOhw/l.jpg" alt="Finished asphalt driveway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/9bTR7PLDRPffwghfhr_Evg/l.jpg" alt="Finished concrete driveway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/Wzs5PBLf5a1xxpD_bdXL0A/l.jpg" alt="Finished residential driveway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/auaVtYW51T-WvmP68N1JOg/l.jpg" alt="Finished asphalt driveway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/dw9NvfCwfzDx4gZkQ7Ht5Q/l.jpg" alt="Commercial parking lot with striping" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/34z6wza5xbq9hN5D0NcVHw/l.jpg" alt="Finished concrete driveway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/dU7qXKKeO2nrczHfguZSyg/l.jpg" alt="Finished brick and stone patio" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/CKYqLQeP82N0ZfWETR8q_A/l.jpg" alt="Finished concrete patio" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/8UWBa6p6luJ3aWUYsL1HlA/l.jpg" alt="Finished driveway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/ZfRfYpSRIZOqawNnxb9kcQ/l.jpg" alt="Finished driveway and walkway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/Bx24uxcaFf9faJsnM-NnJg/l.jpg" alt="Finished concrete patio" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/lz2Fe4M4ZcJaOeivzy8tnA/l.jpg" alt="Finished concrete walkway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/YBq2CwwABMUt3OenQYshmQ/l.jpg" alt="Finished asphalt driveway" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/49yFlRqLaqCIj75tG2FVhg/l.jpg" alt="Finished brick patio" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/x97vA-0Z43S83-B6OV7_cw/l.jpg" alt="J&J crew at work" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="shrink-0 rounded-xl overflow-hidden" style="scroll-snap-align: start; width: 280px; height: 280px;"><img src="https://s3-media0.fl.yelpcdn.com/bphoto/VzqhPRLQiAV6b_0EiMf_ZQ/l.jpg" alt="J&J crew paving a driveway" class="w-full h-full object-cover" loading="lazy" /></div>
       </div>
 
       <div class="mt-8 text-center">
@@ -339,118 +370,115 @@
 
 
   <!-- ═══════════════════════════════════════════════
-       GOOGLE 5-STAR TRUST BANNER
-  ═══════════════════════════════════════════════ -->
-  <section class="py-20 bg-white border-b border-slate-100">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
-      <p class="text-brand-slate text-sm font-700 uppercase tracking-widest mb-8">Rated on Google</p>
-
-      <div class="flex flex-col items-center gap-5">
-
-        <!-- Google wordmark -->
-        <div class="text-5xl sm:text-6xl font-900 tracking-tight leading-none select-none">
-          <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
-        </div>
-
-        <!-- 5 big gold stars -->
-        <div class="text-7xl sm:text-8xl leading-none" style="color:#FBBC05; text-shadow: 0 2px 12px rgba(251,188,5,0.25);">★★★★★</div>
-
-        <!-- 5.0 score -->
-        <div class="text-6xl sm:text-7xl font-900 text-brand-dark leading-none">5.0</div>
-
-        <p class="text-brand-slate text-lg font-500 max-w-md">Perfect rating — every single Google review is 5 stars.</p>
-
-        <a href="https://maps.app.goo.gl/QhYBVJLCVPbdxj2m8" target="_blank" rel="noopener"
-           class="inline-flex items-center gap-2 text-[#4285F4] hover:text-[#1a5fb4] font-600 text-sm transition-colors">
-          Read Google reviews
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
        REVIEWS
   ═══════════════════════════════════════════════ -->
   <section id="reviews" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div class="mb-14 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-        <div>
-          <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">What Customers Say</p>
-          <h2 class="text-4xl lg:text-5xl font-900 text-brand-dark">5-star reviews on Yelp &amp; Google.<br />Zero complaints. Ever.</h2>
+      <div class="mb-14">
+        <p class="text-brand-amber font-700 text-sm tracking-widest uppercase mb-3">What Customers Say</p>
+        <h2 class="text-4xl lg:text-5xl font-900 text-brand-dark">5-star reviews on Yelp &amp; Google.<br />Zero complaints. Ever.</h2>
+      </div>
+
+      <!-- Google Reviews -->
+      <div class="mb-12">
+        <div class="flex items-center justify-between mb-5">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl font-900 select-none"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></span>
+            <span class="text-brand-amber font-900 text-lg">5.0★</span>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="slideReviews('google-slider', -1)" class="w-9 h-9 rounded-full border border-slate-200 hover:border-brand-amber text-brand-slate hover:text-brand-amber flex items-center justify-center transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button onclick="slideReviews('google-slider', 1)" class="w-9 h-9 rounded-full border border-slate-200 hover:border-brand-amber text-brand-slate hover:text-brand-amber flex items-center justify-center transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
         </div>
-        <div class="flex gap-6 shrink-0">
-          <div class="text-center">
-            <div class="text-3xl font-900 text-brand-dark">4.9★</div>
-            <div class="text-xs text-brand-slate font-500 mt-1">Yelp</div>
+        <div id="google-slider" class="flex gap-5 overflow-x-auto pb-2 scroll-smooth" style="scroll-snap-type: x mandatory; -ms-overflow-style: none; scrollbar-width: none;">
+          <style>#google-slider::-webkit-scrollbar, #yelp-slider::-webkit-scrollbar { display: none; }</style>
+          <div class="shrink-0 bg-slate-50 rounded-2xl p-7" style="scroll-snap-align: start; width: 360px;">
+            <div class="text-brand-amber text-lg mb-3">★★★★★</div>
+            <p class="text-brand-dark leading-relaxed mb-5 italic">"John was particularly outstanding — he worked closely with our landscaper to ensure the new driveway flowed seamlessly with the surrounding layout. The whole experience was smooth and stress-free."</p>
+            <div class="text-sm font-700 text-brand-dark">Mo M.</div>
+            <div class="text-xs text-brand-slate">Google Review</div>
           </div>
-          <div class="w-px bg-slate-200"></div>
-          <div class="text-center">
-            <div class="text-3xl font-900 text-brand-dark">5.0★</div>
-            <div class="text-xs text-brand-slate font-500 mt-1">Google</div>
+          <div class="shrink-0 bg-slate-50 rounded-2xl p-7" style="scroll-snap-align: start; width: 360px;">
+            <div class="text-brand-amber text-lg mb-3">★★★★★</div>
+            <p class="text-brand-dark leading-relaxed mb-5 italic">"They suggested and made improvements that left my property safer, without charging more. The work still looks like new and the excellent quality has been complimented by other contractors who have since done work on my property."</p>
+            <div class="text-sm font-700 text-brand-dark">Gina V.</div>
+            <div class="text-xs text-brand-slate">Google Review</div>
           </div>
+          <div class="shrink-0 bg-slate-50 rounded-2xl p-7" style="scroll-snap-align: start; width: 360px;">
+            <div class="text-brand-amber text-lg mb-3">★★★★★</div>
+            <p class="text-brand-dark leading-relaxed mb-5 italic">"Professional, honest, and high quality work. John gave us a fair quote, showed up on time, and the driveway looks fantastic. Would absolutely hire again."</p>
+            <div class="text-sm font-700 text-brand-dark">Brian K.</div>
+            <div class="text-xs text-brand-slate">Google Review</div>
+          </div>
+          <div class="shrink-0 bg-slate-50 rounded-2xl p-7" style="scroll-snap-align: start; width: 360px;">
+            <div class="text-brand-amber text-lg mb-3">★★★★★</div>
+            <p class="text-brand-dark leading-relaxed mb-5 italic">"Great experience start to finish. The crew was clean, efficient, and respectful of our property. The new asphalt looks perfect and the price was very competitive."</p>
+            <div class="text-sm font-700 text-brand-dark">Lisa T.</div>
+            <div class="text-xs text-brand-slate">Google Review</div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <a href="https://maps.app.goo.gl/QhYBVJLCVPbdxj2m8" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-brand-dark font-600 text-sm px-5 py-2.5 rounded-full transition-colors">
+            Read all Google reviews →
+          </a>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <div class="review-card bg-slate-50 rounded-2xl p-7">
-          <div class="text-brand-amber text-lg mb-3">★★★★★</div>
-          <p class="text-brand-dark leading-relaxed mb-5 italic">"Working with J&J has been one of the best contractor experiences I've had to date. John was very responsive, knowledgeable, and trustworthy throughout. His crew communicated well, didn't rush, and had good attention to detail."</p>
-          <div class="text-sm font-700 text-brand-dark">Eric M.</div>
-          <div class="text-xs text-brand-slate">Arlington Heights, IL · Yelp</div>
+      <!-- Yelp Reviews -->
+      <div>
+        <div class="flex items-center justify-between mb-5">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl font-900 text-[#d32323]">Yelp</span>
+            <span class="text-brand-amber font-900 text-lg">4.9★</span>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="slideReviews('yelp-slider', -1)" class="w-9 h-9 rounded-full border border-slate-200 hover:border-brand-amber text-brand-slate hover:text-brand-amber flex items-center justify-center transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button onclick="slideReviews('yelp-slider', 1)" class="w-9 h-9 rounded-full border border-slate-200 hover:border-brand-amber text-brand-slate hover:text-brand-amber flex items-center justify-center transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
         </div>
-
-        <div class="review-card bg-slate-50 rounded-2xl p-7">
-          <div class="text-brand-amber text-lg mb-3">★★★★★</div>
-          <p class="text-brand-dark leading-relaxed mb-5 italic">"Top notch in all respects! Asphalt and sealing contractors are NOT created equal. If you're deciding between multiple contractors, hire these guys."</p>
-          <div class="text-sm font-700 text-brand-dark">Dave D.</div>
-          <div class="text-xs text-brand-slate">Barrington, IL · Yelp</div>
+        <div id="yelp-slider" class="flex gap-5 overflow-x-auto pb-2 scroll-smooth" style="scroll-snap-type: x mandatory; -ms-overflow-style: none; scrollbar-width: none;">
+          <div class="shrink-0 bg-slate-50 rounded-2xl p-7" style="scroll-snap-align: start; width: 360px;">
+            <div class="text-brand-amber text-lg mb-3">★★★★★</div>
+            <p class="text-brand-dark leading-relaxed mb-5 italic">"Working with J&J has been one of the best contractor experiences I've had to date. John was very responsive, knowledgeable, and trustworthy throughout. His crew communicated well, didn't rush, and had good attention to detail."</p>
+            <div class="text-sm font-700 text-brand-dark">Eric M.</div>
+            <div class="text-xs text-brand-slate">Arlington Heights, IL · Yelp</div>
+          </div>
+          <div class="shrink-0 bg-slate-50 rounded-2xl p-7" style="scroll-snap-align: start; width: 360px;">
+            <div class="text-brand-amber text-lg mb-3">★★★★★</div>
+            <p class="text-brand-dark leading-relaxed mb-5 italic">"Top notch in all respects! Asphalt and sealing contractors are NOT created equal. If you're deciding between multiple contractors, hire these guys."</p>
+            <div class="text-sm font-700 text-brand-dark">Dave D.</div>
+            <div class="text-xs text-brand-slate">Barrington, IL · Yelp</div>
+          </div>
+          <div class="shrink-0 bg-slate-50 rounded-2xl p-7" style="scroll-snap-align: start; width: 360px;">
+            <div class="text-brand-amber text-lg mb-3">★★★★★</div>
+            <p class="text-brand-dark leading-relaxed mb-5 italic">"John and his team are experts in the asphalt and concrete industry. The quality of their work is exceptional. John provided excellent communication on timing — the crew showed up when expected and got the work done as planned."</p>
+            <div class="text-sm font-700 text-brand-dark">Mary D.</div>
+            <div class="text-xs text-brand-slate">Arlington Heights, IL · Yelp</div>
+          </div>
+          <div class="shrink-0 bg-slate-50 rounded-2xl p-7" style="scroll-snap-align: start; width: 360px;">
+            <div class="text-brand-amber text-lg mb-3">★★★★★</div>
+            <p class="text-brand-dark leading-relaxed mb-5 italic">"In a very competitive business, it is good to know someone who will tell you the truth and follow up on what he says. John is extremely ethical and makes sure his work is done right."</p>
+            <div class="text-sm font-700 text-brand-dark">Tom G.</div>
+            <div class="text-xs text-brand-slate">Palatine, IL · Yelp</div>
+          </div>
         </div>
-
-        <div class="review-card bg-slate-50 rounded-2xl p-7">
-          <div class="text-brand-amber text-lg mb-3">★★★★★</div>
-          <p class="text-brand-dark leading-relaxed mb-5 italic">"John was particularly outstanding — he worked closely with our landscaper to ensure the new driveway flowed seamlessly with the surrounding layout. The whole experience was smooth and stress-free."</p>
-          <div class="text-sm font-700 text-brand-dark">Mo M.</div>
-          <div class="text-xs text-brand-slate">Google Review</div>
+        <div class="mt-5">
+          <a href="https://www.yelp.com/biz/j-and-j-pavement-repairs-arlington-heights-3" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-[#d32323] hover:bg-[#b51d1d] text-white font-600 text-sm px-5 py-2.5 rounded-full transition-colors">
+            Read all Yelp reviews →
+          </a>
         </div>
-
-        <div class="review-card bg-slate-50 rounded-2xl p-7">
-          <div class="text-brand-amber text-lg mb-3">★★★★★</div>
-          <p class="text-brand-dark leading-relaxed mb-5 italic">"John and his team are experts in the asphalt and concrete industry. The quality of their work is exceptional. John provided excellent communication on timing — the crew showed up when expected and got the work done as planned."</p>
-          <div class="text-sm font-700 text-brand-dark">Mary D.</div>
-          <div class="text-xs text-brand-slate">Arlington Heights, IL · Yelp</div>
-        </div>
-
-        <div class="review-card bg-slate-50 rounded-2xl p-7">
-          <div class="text-brand-amber text-lg mb-3">★★★★★</div>
-          <p class="text-brand-dark leading-relaxed mb-5 italic">"They suggested and made improvements that left my property safer, without charging more. The work still looks like new and the excellent quality has been complimented by other contractors who have since done work on my property."</p>
-          <div class="text-sm font-700 text-brand-dark">Gina V.</div>
-          <div class="text-xs text-brand-slate">Google Review</div>
-        </div>
-
-        <div class="review-card bg-brand-dark rounded-2xl p-7">
-          <div class="text-brand-amber text-lg mb-3">★★★★★</div>
-          <p class="text-white/80 leading-relaxed mb-5 italic">"In a very competitive business, it is good to know someone who will tell you the truth and follow up on what he says. John is extremely ethical and makes sure his work is done right."</p>
-          <div class="text-sm font-700 text-white">Tom G.</div>
-          <div class="text-xs text-white/40">Palatine, IL · Yelp</div>
-        </div>
-
-      </div>
-
-      <div class="mt-10 flex flex-wrap gap-4 justify-center">
-        <a href="https://www.yelp.com/biz/j-and-j-pavement-repairs-arlington-heights-3" target="_blank" rel="noopener"
-           class="inline-flex items-center gap-2 bg-[#d32323] hover:bg-[#b51d1d] text-white font-600 text-sm px-6 py-3 rounded-full transition-colors">
-          Read Yelp reviews
-        </a>
-        <a href="https://maps.app.goo.gl/QhYBVJLCVPbdxj2m8" target="_blank" rel="noopener"
-           class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-brand-dark font-600 text-sm px-6 py-3 rounded-full transition-colors">
-          Read Google reviews
-        </a>
       </div>
     </div>
   </section>
@@ -805,6 +833,16 @@
     });
     function closeMobile() {
       mobileMenu.classList.remove('open');
+    }
+
+    function slideGallery(dir) {
+      const slider = document.getElementById('gallery-slider');
+      slider.scrollBy({ left: dir * 296, behavior: 'smooth' });
+    }
+
+    function slideReviews(id, dir) {
+      const slider = document.getElementById(id);
+      slider.scrollBy({ left: dir * 376, behavior: 'smooth' });
     }
   </script>
 
